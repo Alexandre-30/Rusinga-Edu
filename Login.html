@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <title>Log In</title>
+    <script src="Script.js" defer></script>
+</head>
+<body>
+    <h1>Log In</h1>
+    <form method="post">
+        <input type="email" placeholder="Enter your email adress" id="email"><br>
+        <input type="password" placeholder="Enter your Password" id="password">
+        <input type="number" placeholder="Enter your year group" id="Yrgrp"><br>
+        <button onclick="logIn()" id="button">Log In</button>
+    </form>
+    <script>
+        var email=localStorage.getItem("email");
+        var password=localStorage.getItem("password");
+        var Yg=localStorage.getItem("class");
+        function logIn(){
+            var inputEmail=document.getElementById("email").value;
+            var inputPassword=document.getElementById("password").value;
+            var Yrgrp=document.getElementById("Yrgrp").value;
+            if(inputEmail==email && inputPassword==password && Yg==Yrgrp){
+                window.alert("Log in successful");
+                 if(Yrgrp>=9.5){
+                    window.location.href="Main.html";
+                }
+                else{
+                    window.location.href="Main2.html";}
+                }else{
+                alert("Invalid Credentials. Check or sign up!");}
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+@font-face { font-family: 'Mergola'; src: url('fonts/mergola.otf') format('opentype'); }
+@font-face { font-family: 'Gobe'; src: url('fonts/gobe.otf') format('opentype'); }
+@font-face { font-family: 'white-line'; src: url('fonts/white-line.otf') format('opentype'); }
+@font-face { font-family: 'winked'; src: url('fonts/winked.otf') format('opentype'); }
+
+body { font-family: 'Mergola', sans-serif; margin: 0; padding: 20px; color: white; }
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #28282B;
+    padding: 15px 30px;
+    border-radius: 50px;
+    z-index: 10;
+    position: relative;
+}
+
+.brand-title {
+    font-family: 'winked', sans-serif;
+    color: #CD7F32;
+    font-size: 1.8rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.hero {
+    margin-top: 100px;
+    padding: 40px;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+}
+
+.hero-title {
+    font-family: 'Gobe', sans-serif;
+    color: #28282B;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.hero p { 
+    font-size: 1.3rem; 
+    color: #28282B; 
+    margin-bottom: 30px; 
+    line-height: 1.6; 
+}
+
+.navbar ul { display: flex; list-style: none; align-items: center; gap: 25px; padding: 0; margin: 0 0 0 40px; }
+
+.navbar a { 
+    color: white; 
+    text-decoration: none; 
+    font-family: 'white-line', sans-serif;
+    font-size: 1.2rem;
+}
+
+.cta-button {
+    background-color: #CD7F32;
+    color: #28282B;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Gobe', sans-serif;
+    transition: all 0.3s ease;
+    border: 2px solid #CD7F32;
+}
+
+.cta-button:hover { background-color: transparent; color: #CD7F32; }
+
+.dropdown { position: relative; display: inline-block; }
+.dropdown-content {
+    display: none; position: absolute; background-color: #7B7B7C;
+    min-width: 150px; border-radius: 10px; padding: 10px; margin-top: 15px; z-index: 1; border: 1px solid #CD7F32;
+}
+.dropdown-content a { display: block; padding: 8px 0; color: white; }
+.dropdown:hover .dropdown-content { display: block; }
+.search-icon { margin-left: auto; }
+.search-icon img { width: 22px; height: 22px; display: block; }

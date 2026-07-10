@@ -1,0 +1,97 @@
+body{
+    background:linear-gradient(to right, blue, rgb(59, 59, 251), rgb(84, 84, 252));
+}
+h1{
+    text-align:center;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'Baloo 2', cursive;
+}
+button{
+    display: block;
+    margin:auto;
+    border-radius: 10px;
+    font-size: 40px;
+    padding: 5px;
+    margin-top:150px;
+    width: 200px;
+    background-color:orange;
+}
+button:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+    animation: wiggle 1s ease-in-out;
+}
+@keyframes wiggle{
+        0%{transform: rotate(-36deg);}
+        50%{transform: rotate(36deg);}
+        100%{transform: rotate(-36deg);}
+}
+p{
+    position:fixed;
+    bottom:1px;
+    text-align:center;
+    transform: TranslateX(-50%);
+    left:50%;
+}
+input{
+    display: block;
+    margin:auto;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    width: 300px;
+    margin-top:15px;
+}
+h2{
+    font-family: 'Baloo 2', cursive;
+    text-align:center;
+}
+.navbar{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+}
+.container{
+    background-color: rgb(0, 0, 0);
+    height: 200px;
+    text-align:center;
+    margin-top:15px;
+    border-radius: 20px;
+}
+a{
+    margin-right: 20px;
+}
+.title{
+    color: whitesmoke;
+}
+a:hover{
+    font-size: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+a{
+    color: rgb(8, 104, 221);
+    font-family: 'Baloo 2', cursive;
+}
+.card{
+    display: flex;
+    width:auto;
+    margin: auto;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right:40px;
+}
+img{
+    size:50px
+}
+footer{
+    background-color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius:20px;
+    margin-top:20px;
+}
+.pre{
+    color:whitesmoke;
+}
